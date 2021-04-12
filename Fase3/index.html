@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La interfaz de usuario</title>
+
+</head>
+
+<body>
+    <header>
+        <h1> La interfaz de usuario, Interacción Humano Ordenador</h1>
+
+        <nav>
+            <ul>
+                <li onclick="irPagina('inicio')">Inicio</li>
+                <li>Temas
+                    <ul>
+                        <li><a href="#" onclick="irPagina('temaUno')"> Tema 1 </a></li>
+                        <li><a href="#" onclick="irPagina('temaDos')">Tema 2 </a></li>
+                    </ul>
+                </li>
+                <li>Recursos Digitales
+                    <ul>
+                        <li><a href="#" onclick="irPagina('recusoUno')">Recurso 1 </a></li>
+                        <li><a href="#" onclick="irPagina('recusoDos')">Recurso 2 </a></li>
+                    </ul>
+                </li>
+                <li>Aprendizaje
+                    <ul>
+                        <li><a href="#" onclick="irPagina('actividadUno')">Actividad 1 </a></li>
+                        <li><a href="#" onclick="irPagina('actividadDos')">Actividad 2 </a></li>
+                    </ul>
+                </li>
+                <li>Acerca de
+                    <ul>
+                        <li>
+                            <a href="#" onclick="irPagina('autor')">Autor</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="app">
+        
+        <section id="inicio">
+            <h2>La interfaz de usuario</h2>
+            <p>
+                Disciplina que se dedica a la evolución y implementación de interfaces de computo que tienen interacción
+                con los humanos. influyendo directamente en la satisfacción del usuario final, el estudio de esto
+                garantiza que la aplicación de computo tenga éxito al ser usada por los usuarios.
+            </p>
+            <article>
+                <h3>Usuarios</h3>
+                El actor más importante en esta etapa, es e usuario también llamado audiencia o usuario final, lo que
+                nos obliga a estudiar detenidamente el requerimiento y sus posibles soluciones, para brindarle una
+                solución y no un problema. Esto garantiza la compra o uso de las aplicaciones en nichos más abiertos y
+                amplios.
+            </article>
+            <img src="img/Page_1.png" alt="Interfaz">
+        </section>
+
+        <section id="temaUno">Tema uno</section>
+        <section id="temaDos">Tema Dos</section>
+
+        <section id="recusoUno">Recurso uno</section>
+        <section id="recusoDos">Recurso Dos</section>
+
+        <section id="actividadUno">Actividad uno</section>
+        <section id="actividadDos">Actividad Dos</section>
+
+        <section id="autor">Autor</section>
+
+
+    </section>
+    <footer>
+        <span> <strong> Autor:</strong> Aleixer Alvarado</span> <br>
+        <span><strong> Correo:</strong> ing.sistemas.unan@gmail.com</span> <br>
+        <span><strong> Fecha:</strong> 03/07/2021 </span> <br>
+    </footer>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
