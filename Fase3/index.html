@@ -6,76 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La interfaz de usuario</title>
-
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1> La interfaz de usuario, Interacción Humano Ordenador</h1>
 
         <nav>
             <ul>
-                <li onclick="irPagina('inicio')">Inicio</li>
+                <li onclick="irPagina('inicio')">
+                    <a href="#">Inicio</a>
+                </li>
                 <li>Temas
                     <ul>
-                        <li><a href="#" onclick="irPagina('temaUno')"> Tema 1 </a></li>
-                        <li><a href="#" onclick="irPagina('temaDos')">Tema 2 </a></li>
+                        <li onclick="irPagina('temaUno')"><a href="#"> Tema 1 </a></li>
+                        <li onclick="irPagina('temaDos')"><a href="#">Tema 2 </a></li>
                     </ul>
                 </li>
                 <li>Recursos Digitales
                     <ul>
-                        <li><a href="#" onclick="irPagina('recusoUno')">Recurso 1 </a></li>
-                        <li><a href="#" onclick="irPagina('recusoDos')">Recurso 2 </a></li>
+                        <li onclick="irPagina('recusoUno')"><a href="#">Recurso 1 </a></li>
+                        <li onclick="irPagina('recusoDos')"><a href="#">Recurso 2 </a></li>
                     </ul>
                 </li>
                 <li>Aprendizaje
                     <ul>
-                        <li><a href="#" onclick="irPagina('actividadUno')">Actividad 1 </a></li>
-                        <li><a href="#" onclick="irPagina('actividadDos')">Actividad 2 </a></li>
+                        <li onclick="irPagina('actividadUno')"><a href="#">Actividad 1 </a></li>
+                        <li onclick="irPagina('actividadDos')"><a href="#">Actividad 2 </a></li>
                     </ul>
                 </li>
                 <li>Acerca de
                     <ul>
-                        <li>
-                            <a href="#" onclick="irPagina('autor')">Autor</a>
+                        <li onclick="irPagina('autor')">
+                            <a href="#">Autor</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        <h1> La interfaz de usuario, Interacción Humano Ordenador</h1>
+
     </header>
-    <section id="app">
-        
-        <section id="inicio">
-            <h2>La interfaz de usuario</h2>
-            <p>
-                Disciplina que se dedica a la evolución y implementación de interfaces de computo que tienen interacción
-                con los humanos. influyendo directamente en la satisfacción del usuario final, el estudio de esto
-                garantiza que la aplicación de computo tenga éxito al ser usada por los usuarios.
-            </p>
-            <article>
-                <h3>Usuarios</h3>
-                El actor más importante en esta etapa, es e usuario también llamado audiencia o usuario final, lo que
-                nos obliga a estudiar detenidamente el requerimiento y sus posibles soluciones, para brindarle una
-                solución y no un problema. Esto garantiza la compra o uso de las aplicaciones en nichos más abiertos y
-                amplios.
-            </article>
-            <img src="img/Page_1.png" alt="Interfaz">
+    <section class="sct-pricipal">
+        <section id="app" class="sct-app">
+
+            <section id="inicio">
+                <h2>La interfaz de usuario</h2>
+                <p>
+                    Disciplina que se dedica a la evolución y implementación de interfaces de computo que tienen
+                    interacción
+                    con los humanos. influyendo directamente en la satisfacción del usuario final, el estudio de esto
+                    garantiza que la aplicación de computo tenga éxito al ser usada por los usuarios.
+                </p>
+                <article>
+                    <h3>Usuarios</h3>
+                    El actor más importante en esta etapa, es e usuario también llamado audiencia o usuario final, lo
+                    que
+                    nos obliga a estudiar detenidamente el requerimiento y sus posibles soluciones, para brindarle una
+                    solución y no un problema. Esto garantiza la compra o uso de las aplicaciones en nichos más abiertos
+                    y
+                    amplios.
+                </article>
+                <img src="img/Page_1.png" alt="Interfaz">
+            </section>
+
+            <section id="temaUno">
+                <h3> Tema uno</h3>
+                <p>loading...</p>
+            </section>
+            <section id="temaDos">
+                <h3> Tema Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="recusoUno">
+                <h3> Recurso uno</h3>
+                <p>loading...</p>
+            </section>
+            <section id="recusoDos">
+                <h3> Recurso Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="actividadUno">
+                <h3> Actividad uno</h3>
+                <p>loading...</p>
+            </section>
+            <section id="actividadDos">
+                <h3> Actividad Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="autor">
+                <h3>Autor</h3>
+                <span> <strong> Autor:</strong> Aleixer Alvarado</span> <br>
+                <span><strong> Correo:</strong> ing.sistemas.unan@gmail.com</span> <br>
+                <span><strong> Fecha:</strong> 03/07/2021 </span> <br>
+                <span><strong> Programa:</strong> Ingenieria de sistemas</span> <br>
+ <img src="img/aab.jpeg" alt="Autor" class="aab-img">
+
+
+            </section>
+
         </section>
+        <aside>
+            <div class="fb-page" data-href="https://www.facebook.com/UniversidadUNAD/" data-tabs="timeline"
+                data-width="340" data-height="400" data-small-header="true" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/UniversidadUNAD/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/UniversidadUNAD/">Universidad Nacional Abierta y a Distancia -
+                        UNAD Colombia</a></blockquote>
+            </div>
 
-        <section id="temaUno">Tema uno</section>
-        <section id="temaDos">Tema Dos</section>
-
-        <section id="recusoUno">Recurso uno</section>
-        <section id="recusoDos">Recurso Dos</section>
-
-        <section id="actividadUno">Actividad uno</section>
-        <section id="actividadDos">Actividad Dos</section>
-
-        <section id="autor">Autor</section>
-
+        </aside>
 
     </section>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0"
+        nonce="gbCYxltW"></script>
     <footer>
         <span> <strong> Autor:</strong> Aleixer Alvarado</span> <br>
         <span><strong> Correo:</strong> ing.sistemas.unan@gmail.com</span> <br>
