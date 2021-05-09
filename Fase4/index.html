@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La interfaz de usuario</title>
+    <link rel="stylesheet" href="main.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+    
+    
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li onclick="irPagina('inicio')">
+                    <a href="#">Inicio</a>
+                </li>
+                <li>Temas
+                    <ul>
+                        <li onclick="irPagina('temaUno')"><a href="#"> Tema 1 </a></li>
+                        <li onclick="irPagina('temaDos')"><a href="#">Tema 2 </a></li>
+                    </ul>
+                </li>
+                <li>Recursos Digitales
+                    <ul>
+                        <li onclick="irPagina('recusoUno')"><a href="#">Recurso 1 </a></li>
+                        <li onclick="irPagina('recusoDos')"><a href="#">Recurso 2 </a></li>
+                    </ul>
+                </li>
+                <li>Aprendizaje
+                    <ul>
+                        <li onclick="irPagina('actividadUno')"><a href="#">Media queries </a></li>
+                        <li onclick="irPagina('actividadDos')"><a href="#">SEO </a></li>
+                    </ul>
+                </li>
+                <li>Acerca de
+                    <ul>
+                        <li onclick="irPagina('autor')">
+                            <a href="#">Autor</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1> La interfaz de usuario, Interacción Humano Ordenador</h1>
+
+    </header>
+    <section class="sct-pricipal">
+        <section id="app" class="sct-app">
+
+            <section id="inicio">
+                <h2>La interfaz de usuario</h2>
+                <p>
+                    Disciplina que se dedica a la evolución y implementación de interfaces de computo que tienen
+                    interacción
+                    con los humanos. influyendo directamente en la satisfacción del usuario final, el estudio de esto
+                    garantiza que la aplicación de computo tenga éxito al ser usada por los usuarios.
+                </p>
+                <article>
+                    <h3>Usuarios</h3>
+                    El actor más importante en esta etapa, es e usuario también llamado audiencia o usuario final, lo
+                    que
+                    nos obliga a estudiar detenidamente el requerimiento y sus posibles soluciones, para brindarle una
+                    solución y no un problema. Esto garantiza la compra o uso de las aplicaciones en nichos más abiertos
+                    y
+                    amplios.
+                </article>
+                <img src="img/Page_1.png" alt="Interfaz">
+            </section>
+
+            <section id="temaUno">
+                <h3> Tema uno</h3>
+                <p>loading...</p>
+            </section>
+            <section id="temaDos">
+                <h3> Tema Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="recusoUno">
+                <h3> Recurso uno</h3>
+                <p>loading...</p>
+            </section>
+            <section id="recusoDos">
+                <h3> Recurso Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="actividadUno">
+                <h3> Media Queries</h3>
+                <p>Estas funciones aplicadas desde el CSS nos permiten cambiar o presentar las paginas según se desee que se comporte en los distintos dispositivos </p>
+
+                <a target="_blank" class="aab-a" href="https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries">Link sobre la documentación de media queries en la organización Mozilla developer </a>
+
+
+                <h3> Cuestionario</h3>
+                <p> Por favor diligencie el siguiente cuestionario según lo aprendido en el anterior artículo </p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre Estudiante</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                  </div>
+                
+                 <h4>Según el texto en donde se hace referencia a las sentencias de Media quieres</h4>
+                  <select class="form-select" id="preguntaUno">
+                    <option selected>Seleccionar</option>
+                    <option value="1">Hoja de estilos</option>
+                    <option value="2">Hoja de Javascript</option>
+                    <option value="3">En el HTML</option>
+                  </select>
+
+
+<h4>¿Para iniciar un media querie referente a la pantalla, se debe usar?   </h4>
+<div class="form-check" >
+    <input class="form-check-input" type="radio" name="flexRadioDefault"  id="flexRadioDefault1" value="1">
+    <label class="form-check-label" for="flexRadioDefault1">
+        screen
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
+    <label class="form-check-label" for="flexRadioDefault2">
+        print
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="3">
+    <label class="form-check-label" for="flexRadioDefault3">
+      Ninguno
+    </label>
+  </div>
+
+
+  
+<h4>¿Para aplicar una hoja de estilo a dispositivos con al menos 400 dpi de resolución, se debe usar?   </h4>
+<div class="form-check" >
+    <input class="form-check-input" type="radio" name="flexRadioDefaultTres"  id="flexRadioDefault12" value="1">
+    <label class="form-check-label" for="flexRadioDefault12">
+        @media print and (min-resolution: 400dpi) { ... }
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefaultTres" id="flexRadioDefault22" value="2">
+    <label class="form-check-label" for="flexRadioDefault22">
+        @media print (min-resolution: 400dpi) { ... }
+    </label>
+  </div>
+
+
+  <button type="button" class="btn btn-success" onclick="enviarDocumento()">Enviar </button>
+
+            </section>
+            <section id="actividadDos">
+                <h3> Actividad Dos</h3>
+                <p>loading...</p>
+            </section>
+
+            <section id="autor">
+                <h3>Autor</h3>
+                <span> <strong> Autor:</strong> Aleixer Alvarado</span> <br>
+                <span><strong> Correo:</strong> ing.sistemas.unan@gmail.com</span> <br>
+                <span><strong> Fecha:</strong> 03/07/2021 </span> <br>
+                <span><strong> Programa:</strong> Ingenieria de sistemas</span> <br>
+ <img src="img/aab.jpeg" alt="Autor" class="aab-img">
+
+
+            </section>
+
+        </section>
+        <aside>
+            <div class="fb-page" data-href="https://www.facebook.com/UniversidadUNAD/" data-tabs="timeline"
+                data-width="340" data-height="400" data-small-header="true" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/UniversidadUNAD/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/UniversidadUNAD/">Universidad Nacional Abierta y a Distancia -
+                        UNAD Colombia</a></blockquote>
+            </div>
+
+        </aside>
+
+    </section>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0"
+        nonce="gbCYxltW"></script>
+    <footer>
+        <span> <strong> Autor:</strong> Aleixer Alvarado</span> <br>
+        <span><strong> Correo:</strong> ing.sistemas.unan@gmail.com</span> <br>
+        <span><strong> Fecha:</strong> 03/07/2021 </span> <br>
+    </footer>
+
+    <script src="main.js" type="text/javascript"></script>
+   
+</body>
+
+</html>
